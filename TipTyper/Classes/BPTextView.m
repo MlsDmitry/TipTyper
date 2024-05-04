@@ -206,22 +206,34 @@
 		NSString *substring = [text substringWithRange:currentRange];
 		NSMutableArray *lineStarts = [NSMutableArray new];
 		
-		void (^indentationBlock)(NSString*,NSRange,NSRange,BOOL*) = ^(NSString *substr, NSRange substringRange, NSRange enclosingRange, BOOL *stop)
-		{
-			NSUInteger lineStart = 0;
-			[text getLineStart:&lineStart end:nil contentsEnd:nil forRange:NSMakeRange(currentRange.location + substringRange.location, substringRange.length)];
-			[lineStarts addObject:@(lineStart)];
-		};
+        void (^indentationBlock)(NSRange) = ^(NSRange substringRange)
+        {
+            NSUInteger lineStart = 0;
+            
+            [text getLineStart:&lineStart
+                           end:nil
+                   contentsEnd:nil
+                      forRange:NSMakeRange(currentRange.location + substringRange.location, substringRange.length)];
+            
+            [lineStarts addObject:@(lineStart)];
+        };
 
 		if ([substring length] != 0)
 		{
-			[substring enumerateSubstringsInRange:NSMakeRange(0, substring.length)
-										  options:NSStringEnumerationByLines
-									   usingBlock:indentationBlock];
+//			[substring enumerateSubstringsInRange:NSMakeRange(0, substring.length)
+//										  options:NSStringEnumerationByLines
+//									   usingBlock:indentationBlock];
+            NSArray<NSString*> *lines = [substring componentsSeparatedByString:@"\n"];
+            NSUInteger currentPosition = 0;
+            
+            for (id line in lines) {
+                indentationBlock(NSMakeRange(currentPosition, [line length]));
+                currentPosition += [line length];
+            }
 		}
 		else
 		{
-			indentationBlock(substring, NSMakeRange(0, 0), NSMakeRange(0, 0), NULL);
+			indentationBlock(NSMakeRange(0, 0));
 		}
 
 		for (NSUInteger line=0; line<lineStarts.count; line++) {
