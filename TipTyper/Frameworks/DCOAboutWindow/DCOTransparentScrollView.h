@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Danger Cove. All rights reserved.
 //
 
-@import Cocoa;
+#import <Cocoa/Cocoa.h>
 
 /**
  *  Doesn't draw the scroller track.

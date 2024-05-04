@@ -19,7 +19,7 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-@import Cocoa;
+#import <Cocoa/Cocoa.h>
 #import "BPDocument.h"
 #import "BPBackgroundView.h"
 #import "BPTextView.h"
@@ -27,7 +27,8 @@
 @class BPDocument;
 @class BPTextView;
 
-@interface BPDocumentWindow : NSWindow <NSTextViewDelegate, NSTouchBarDelegate>
+//@interface BPDocumentWindow : NSWindow <NSTextViewDelegate, NSTouchBarDelegate>
+@interface BPDocumentWindow : NSWindow <NSTextViewDelegate>
 
 @property (assign) BPDocument *document;
 
@@ -49,7 +50,7 @@
 
 - (void)updateEncodingLabel;
 
-- (NSArray<NSTouchBarItemIdentifier>*)defaultTouchBarIdentifiers;
+//- (NSArray<NSTouchBarItemIdentifier>*)defaultTouchBarIdentifiers;
 
 #pragma mark - IBOutlets
 

@@ -24,7 +24,7 @@
 
 #define kBP_KEYCODE_RETURN 36
 
-static NSTouchBarItemIdentifier BPTouchBarForTextFieldIdentifier = @"com.brunophilipe.TipTyper.TouchBar.BPTextField";
+//static NSTouchBarItemIdentifier BPTouchBarForTextFieldIdentifier = @"com.brunophilipe.TipTyper.TouchBar.BPTextField";
 
 @interface BPTextView ()
 
@@ -148,7 +148,7 @@ static NSTouchBarItemIdentifier BPTouchBarForTextFieldIdentifier = @"com.brunoph
 		NSString *substring = [text substringWithRange:currentRange];
 		NSMutableArray *lineStarts = [NSMutableArray new];
 		
-		void (^indentationBlock)(NSString*,NSRange,NSRange,BOOL*) = ^(NSString *substr, NSRange substringRange, NSRange enclosingRange, BOOL *stop)
+		void (^indentationBlock)(NSRange) = ^(NSRange substringRange)
 		{
 			NSUInteger lineStart = 0;
 			
@@ -162,13 +162,17 @@ static NSTouchBarItemIdentifier BPTouchBarForTextFieldIdentifier = @"com.brunoph
 
 		if ([substring length] != 0)
 		{
-			[substring enumerateSubstringsInRange:NSMakeRange(0, substring.length)
-										  options:NSStringEnumerationByLines | NSStringEnumerationSubstringNotRequired
-									   usingBlock:indentationBlock];
+            NSArray<NSString*> *lines = [substring componentsSeparatedByString:@"\n"];
+            NSUInteger currentPosition = 0;
+            
+            for (id line in lines) {
+                indentationBlock(NSMakeRange(currentPosition, [line length]));
+                currentPosition += [line length];
+            }
 		}
 		else
 		{
-			indentationBlock(substring, NSMakeRange(0, 0), NSMakeRange(0, 0), NULL);
+			indentationBlock(NSMakeRange(0, 0));
 		}
 
 		for (NSUInteger line=0; line<lineStarts.count; line++)
@@ -295,24 +299,24 @@ static NSTouchBarItemIdentifier BPTouchBarForTextFieldIdentifier = @"com.brunoph
 	return 0;
 }
 
-- (NSTouchBar*)makeTouchBar
-{
-	if ([[self window] isKindOfClass:[BPDocumentWindow class]])
-	{
-		BPDocumentWindow *window = (BPDocumentWindow*)[self window];
-
-		NSTouchBar *bar = [[NSTouchBar alloc] init];
-
-		[bar setDelegate:window];
-
-		// Set the default ordering of items.
-		[bar setDefaultItemIdentifiers:[window defaultTouchBarIdentifiers]];
-		[bar setCustomizationIdentifier: BPTouchBarForTextFieldIdentifier];
-
-		return bar;
-	}
-
-	return nil;
-}
+//- (NSTouchBar*)makeTouchBar
+//{
+//	if ([[self window] isKindOfClass:[BPDocumentWindow class]])
+//	{
+//		BPDocumentWindow *window = (BPDocumentWindow*)[self window];
+//
+//		NSTouchBar *bar = [[NSTouchBar alloc] init];
+//
+//		[bar setDelegate:window];
+//
+//		// Set the default ordering of items.
+//		[bar setDefaultItemIdentifiers:[window defaultTouchBarIdentifiers]];
+//		[bar setCustomizationIdentifier: BPTouchBarForTextFieldIdentifier];
+//
+//		return bar;
+//	}
+//
+//	return nil;
+//}
 
 @end

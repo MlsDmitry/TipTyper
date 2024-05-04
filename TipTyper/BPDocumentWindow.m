@@ -25,8 +25,8 @@
 #import "NSColor+Luminance.h"
 #import "BPEncodingTool.h"
 
-static NSTouchBarItemIdentifier BPTouchBarItemIndentationIdentifier = @"com.brunophilipe.TipTyper.Document.Indentation";
-static NSTouchBarItemIdentifier BPTouchBarItemGoToLineIdentifier = @"com.brunophilipe.TipTyper.Document.GoToLine";
+//static NSTouchBarItemIdentifier BPTouchBarItemIndentationIdentifier = @"com.brunophilipe.TipTyper.Document.Indentation";
+//static NSTouchBarItemIdentifier BPTouchBarItemGoToLineIdentifier = @"com.brunophilipe.TipTyper.Document.GoToLine";
 
 @interface BPDocumentWindow ()
 
@@ -555,54 +555,55 @@ static NSTouchBarItemIdentifier BPTouchBarItemGoToLineIdentifier = @"com.brunoph
 
 #pragma mark - Touch Bar Delegate
 
-- (NSArray<NSTouchBarItemIdentifier>*)defaultTouchBarIdentifiers
-{
-	return @[
-	  BPTouchBarItemIndentationIdentifier,
-	  BPTouchBarItemGoToLineIdentifier,
-	  NSTouchBarItemIdentifierOtherItemsProxy
-	  ];
-}
+//- (NSArray<NSTouchBarItemIdentifier>*)defaultTouchBarIdentifiers
+//{
+//	return @[
+//	  BPTouchBarItemIndentationIdentifier,
+//	  BPTouchBarItemGoToLineIdentifier,
+//	  NSTouchBarItemIdentifierOtherItemsProxy
+//	  ];
+//}
 
 @end
 
-@implementation BPDocumentWindow (TouchBarHelpers)
-
-- (NSTouchBarItem*)touchBar:(NSTouchBar *)touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier)identifier
-{
-	if ([identifier isEqualToString:BPTouchBarItemIndentationIdentifier])
-	{
-		NSArray<NSImage *> *images = @[
-			[NSImage imageNamed:@"indentDecreaseTemplate"],
-			[NSImage imageNamed:@"indentIncreaseTemplate"]
-		];
-
-		NSCustomTouchBarItem *item = [[NSCustomTouchBarItem alloc] initWithIdentifier:identifier];
-		NSSegmentedControl *control = [NSSegmentedControl segmentedControlWithImages:images
-																		trackingMode:NSSegmentSwitchTrackingMomentary
-																			  target:self
-																			  action:@selector(action_switch_indentation:)];
-
-		[item setView:control];
-		[item setCustomizationLabel:@"Change Indentation"];
-
-		return item;
-	}
-	else if ([identifier isEqualToString:BPTouchBarItemGoToLineIdentifier])
-	{
-		NSCustomTouchBarItem *item = [[NSCustomTouchBarItem alloc] initWithIdentifier:identifier];
-		NSButton *button = [NSButton buttonWithImage:[NSImage imageNamed:@"jumpToLineTemplate"]
-											  target:self
-											  action:@selector(action_showJumpToLineDialog:)];
-		[item setView:button];
-		[item setCustomizationLabel:@"Jump to Line"];
-
-		return item;
-	}
-	else
-	{
-		return nil;
-	}
-}
-
-@end
+//@implementation BPDocumentWindow (TouchBarHelpers)
+//
+//- (NSTouchBarItem*)touchBar:(NSTouchBar *)touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier)identifier
+//{
+//	if ([identifier isEqualToString:BPTouchBarItemIndentationIdentifier])
+//	{
+//		NSArray<NSImage *> *images = @[
+//			[NSImage imageNamed:@"indentDecreaseTemplate"],
+//			[NSImage imageNamed:@"indentIncreaseTemplate"]
+//		];
+//
+//		NSCustomTouchBarItem *item = [[NSCustomTouchBarItem alloc] initWithIdentifier:identifier];
+//		NSSegmentedControl *control = [NSSegmentedControl segmentedControlWithImages:images
+//																		trackingMode:NSSegmentSwitchTrackingMomentary
+//																			  target:self
+//																			  action:@selector(action_switch_indentation:)];
+//
+//		[item setView:control];
+//		[item setCustomizationLabel:@"Change Indentation"];
+//
+//		return item;
+//	}
+//	else if ([identifier isEqualToString:BPTouchBarItemGoToLineIdentifier])
+//	{
+//		NSCustomTouchBarItem *item = [[NSCustomTouchBarItem alloc] initWithIdentifier:identifier];
+//		NSButton *button = [NSButton buttonWithImage:[NSImage imageNamed:@"jumpToLineTemplate"]
+//											  target:self
+//											  action:@selector(action_showJumpToLineDialog:)];
+//		[item setView:button];
+//		[item setCustomizationLabel:@"Jump to Line"];
+//
+//		return item;
+//	}
+//	else
+//	{
+//		return nil;
+//	}
+//}
+//
+//
+//@end
