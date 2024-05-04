@@ -1,0 +1,6 @@
+[submodule "TipTyper/Frameworks/DCOAboutWindow"]
+	path = TipTyper/Frameworks/DCOAboutWindow
+	url = https://github.com/DangerCove/DCOAboutWindow.git
+[submodule "TipTyper/Frameworks/DCOTransparentScroller"]
+	path = TipTyper/Frameworks/DCOTransparentScroller
+	url = https://github.com/DangerCove/DCOTransparentScroller.git
