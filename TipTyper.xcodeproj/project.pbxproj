@@ -15,41 +15,9 @@
 		153911B418E496A9009FAB64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153911AE18E496A9009FAB64 /* InfoPlist.strings */; };
 		153911B518E496A9009FAB64 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153911AF18E496A9009FAB64 /* Localizable.strings */; };
 		153911B718E496A9009FAB64 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153911B118E496A9009FAB64 /* Preferences.xib */; };
-		15408A6818E3C90400127DA6 /* DCOAboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15408A6518E3C90400127DA6 /* DCOAboutWindow.xib */; };
-		15408A6918E3C90400127DA6 /* DCOAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15408A6718E3C90400127DA6 /* DCOAboutWindowController.m */; };
-		15408A6F18E3CA8B00127DA6 /* DCOTransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 15408A6C18E3CA8B00127DA6 /* DCOTransparentScroller.m */; };
-		15408A7018E3CA8B00127DA6 /* DCOTransparentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15408A6E18E3CA8B00127DA6 /* DCOTransparentScrollView.m */; };
 		157528601A2D6B2A00EB002C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153911B018E496A9009FAB64 /* MainMenu.xib */; };
 		15753F5818AC78F5009E7E9E /* BPApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 15753F5718AC78F5009E7E9E /* BPApplication.m */; };
 		15962E831A0C6CB200E168EC /* BPPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15962E821A0C6CB200E168EC /* BPPreferencesWindowController.m */; };
-		159FE8F51B1E8A9C00518435 /* BPLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D9EB011A2B89AA006EC677 /* BPLayoutManager.m */; };
-		159FE8F61B1E8A9C00518435 /* BPBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DD318A94A5D00C9D410 /* BPBackgroundView.m */; };
-		159FE8F71B1E8A9C00518435 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DC518A8580B00C9D410 /* NoodleLineNumberView.m */; };
-		159FE8F81B1E8A9C00518435 /* BPTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DD618A94F6800C9D410 /* BPTopBarView.m */; };
-		159FE8F91B1E8A9C00518435 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DC318A8580B00C9D410 /* NoodleLineNumberMarker.m */; };
-		159FE8FA1B1E8A9C00518435 /* NSColor+Luminance.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D9EB041A2BA99E006EC677 /* NSColor+Luminance.m */; };
-		159FE8FB1B1E8A9C00518435 /* NSString+WordsCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DD018A94A4E00C9D410 /* NSString+WordsCount.m */; };
-		159FE8FC1B1E8A9C00518435 /* BPTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1502C30518B9AF5D002EC738 /* BPTextView.m */; };
-		159FE8FD1B1E8A9C00518435 /* DCOAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15408A6718E3C90400127DA6 /* DCOAboutWindowController.m */; };
-		159FE8FE1B1E8A9C00518435 /* BPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D4C18A83D5500C9D410 /* BPDocument.m */; };
-		159FE8FF1B1E8A9C00518435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D4518A83D5500C9D410 /* main.m */; };
-		159FE9001B1E8A9C00518435 /* BPDocumentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D7118A83D7C00C9D410 /* BPDocumentWindow.m */; };
-		159FE9011B1E8A9C00518435 /* BPEncodingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1500F28118B056B500481A86 /* BPEncodingTool.m */; };
-		159FE9021B1E8A9C00518435 /* BPPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15962E821A0C6CB200E168EC /* BPPreferencesWindowController.m */; };
-		159FE9031B1E8A9C00518435 /* DCOTransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 15408A6C18E3CA8B00127DA6 /* DCOTransparentScroller.m */; };
-		159FE9041B1E8A9C00518435 /* BPApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 15753F5718AC78F5009E7E9E /* BPApplication.m */; };
-		159FE9051B1E8A9C00518435 /* MarkerLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DC118A8580B00C9D410 /* MarkerLineNumberView.m */; };
-		159FE9061B1E8A9C00518435 /* DCOTransparentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15408A6E18E3CA8B00127DA6 /* DCOTransparentScrollView.m */; };
-		159FE9081B1E8A9C00518435 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C21D3918A83D5500C9D410 /* Cocoa.framework */; };
-		159FE90B1B1E8A9C00518435 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153911AE18E496A9009FAB64 /* InfoPlist.strings */; };
-		159FE90C1B1E8A9C00518435 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153911AF18E496A9009FAB64 /* Localizable.strings */; };
-		159FE90D1B1E8A9C00518435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C21D5418A83D5500C9D410 /* Images.xcassets */; };
-		159FE90E1B1E8A9C00518435 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153911B118E496A9009FAB64 /* Preferences.xib */; };
-		159FE90F1B1E8A9C00518435 /* BPDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153911AC18E496A9009FAB64 /* BPDocument.xib */; };
-		159FE9101B1E8A9C00518435 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153911B018E496A9009FAB64 /* MainMenu.xib */; };
-		159FE9111B1E8A9C00518435 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 153911AD18E496A9009FAB64 /* Credits.rtf */; };
-		159FE9121B1E8A9C00518435 /* DCOAboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15408A6518E3C90400127DA6 /* DCOAboutWindow.xib */; };
-		159FE9131B1E8A9C00518435 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1502C2FB18B97B70002EC738 /* dsa_pub.pem */; };
 		15C21D3A18A83D5500C9D410 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C21D3918A83D5500C9D410 /* Cocoa.framework */; };
 		15C21D4618A83D5500C9D410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D4518A83D5500C9D410 /* main.m */; };
 		15C21D4D18A83D5500C9D410 /* BPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D4C18A83D5500C9D410 /* BPDocument.m */; };
@@ -76,6 +44,34 @@
 			remoteGlobalIDString = 15C21D3518A83D5500C9D410;
 			remoteInfo = TipTyper;
 		};
+		47EB84582BE697F90016057E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EB84542BE697F90016057E /* DCOAboutWindow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BC1CA582110DD4800A52A39;
+			remoteInfo = DCOAboutWindow;
+		};
+		47EB845A2BE698240016057E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EB84542BE697F90016057E /* DCOAboutWindow.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BC1CA572110DD4800A52A39;
+			remoteInfo = DCOAboutWindow;
+		};
+		47EB84602BE6988C0016057E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EB845C2BE6988C0016057E /* DCOTransparentScroller.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B53E8AF02152830F00B589F9;
+			remoteInfo = DCOTransparentScroller;
+		};
+		47EB84622BE698C80016057E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EB845C2BE6988C0016057E /* DCOTransparentScroller.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B53E8AEF2152830F00B589F9;
+			remoteInfo = DCOTransparentScroller;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -91,20 +87,12 @@
 		153911AF18E496A9009FAB64 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		153911B018E496A9009FAB64 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		153911B118E496A9009FAB64 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		15408A6518E3C90400127DA6 /* DCOAboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCOAboutWindow.xib; sourceTree = "<group>"; };
-		15408A6618E3C90400127DA6 /* DCOAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOAboutWindowController.h; sourceTree = "<group>"; };
-		15408A6718E3C90400127DA6 /* DCOAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOAboutWindowController.m; sourceTree = "<group>"; };
-		15408A6B18E3CA8B00127DA6 /* DCOTransparentScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOTransparentScroller.h; sourceTree = "<group>"; };
-		15408A6C18E3CA8B00127DA6 /* DCOTransparentScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOTransparentScroller.m; sourceTree = "<group>"; };
-		15408A6D18E3CA8B00127DA6 /* DCOTransparentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOTransparentScrollView.h; sourceTree = "<group>"; };
-		15408A6E18E3CA8B00127DA6 /* DCOTransparentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOTransparentScrollView.m; sourceTree = "<group>"; };
 		15753F5618AC78F5009E7E9E /* BPApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPApplication.h; sourceTree = "<group>"; };
 		15753F5718AC78F5009E7E9E /* BPApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPApplication.m; sourceTree = "<group>"; };
 		157D76121A633F5200223367 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		157D76141A633F7A00223367 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		15962E811A0C6CB200E168EC /* BPPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPreferencesWindowController.h; sourceTree = "<group>"; };
 		15962E821A0C6CB200E168EC /* BPPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPreferencesWindowController.m; sourceTree = "<group>"; };
-		159FE91A1B1E8A9C00518435 /* TipTyper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipTyper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159FE91C1B1E8D3000518435 /* TipTyper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TipTyper.entitlements; sourceTree = "<group>"; };
 		15BE26E11C9CE38E000DB4C5 /* TipTyper-AppStore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipTyper-AppStore-Info.plist"; sourceTree = "<group>"; };
 		15C21D3618A83D5500C9D410 /* TipTyper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipTyper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,17 +129,11 @@
 		15D9EB031A2BA99E006EC677 /* NSColor+Luminance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Luminance.h"; path = "Classes/NSColor+Luminance.h"; sourceTree = "<group>"; };
 		15D9EB041A2BA99E006EC677 /* NSColor+Luminance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Luminance.m"; path = "Classes/NSColor+Luminance.m"; sourceTree = "<group>"; };
 		15E4929F18A9B1FB004C4901 /* BumpBuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BumpBuild.sh; sourceTree = "<group>"; };
+		47EB84542BE697F90016057E /* DCOAboutWindow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCOAboutWindow.xcodeproj; path = TipTyper/Frameworks/DCOAboutWindow/DCOAboutWindow.xcodeproj; sourceTree = "<group>"; };
+		47EB845C2BE6988C0016057E /* DCOTransparentScroller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCOTransparentScroller.xcodeproj; path = TipTyper/Frameworks/DCOTransparentScroller/DCOTransparentScroller.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		159FE9071B1E8A9C00518435 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				159FE9081B1E8A9C00518435 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		15C21D3318A83D5500C9D410 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,21 +154,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15408A6418E3C90400127DA6 /* DCOAboutWindow */ = {
-			isa = PBXGroup;
-			children = (
-				15408A6518E3C90400127DA6 /* DCOAboutWindow.xib */,
-				15408A6618E3C90400127DA6 /* DCOAboutWindowController.h */,
-				15408A6718E3C90400127DA6 /* DCOAboutWindowController.m */,
-				15408A6B18E3CA8B00127DA6 /* DCOTransparentScroller.h */,
-				15408A6C18E3CA8B00127DA6 /* DCOTransparentScroller.m */,
-				15408A6D18E3CA8B00127DA6 /* DCOTransparentScrollView.h */,
-				15408A6E18E3CA8B00127DA6 /* DCOTransparentScrollView.m */,
-			);
-			name = DCOAboutWindow;
-			path = ../Frameworks/DCOAboutWindow;
-			sourceTree = "<group>";
-		};
 		15C21D2D18A83D5500C9D410 = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +170,6 @@
 			children = (
 				15C21D3618A83D5500C9D410 /* TipTyper.app */,
 				15C21D5A18A83D5500C9D410 /* TipTyperTests.xctest */,
-				159FE91A1B1E8A9C00518435 /* TipTyper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,6 +177,8 @@
 		15C21D3818A83D5500C9D410 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47EB845C2BE6988C0016057E /* DCOTransparentScroller.xcodeproj */,
+				47EB84542BE697F90016057E /* DCOAboutWindow.xcodeproj */,
 				1502C2F918B97AAD002EC738 /* Sparkle.framework */,
 				15C21D3918A83D5500C9D410 /* Cocoa.framework */,
 				15C21D5B18A83D5500C9D410 /* XCTest.framework */,
@@ -289,7 +257,6 @@
 		15C21DBE18A8580B00C9D410 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				15408A6418E3C90400127DA6 /* DCOAboutWindow */,
 				15C21DBF18A8580B00C9D410 /* LineCounter */,
 			);
 			path = Libraries;
@@ -329,27 +296,25 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		47EB84552BE697F90016057E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EB84592BE697F90016057E /* DCOAboutWindow.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47EB845D2BE6988C0016057E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EB84612BE6988C0016057E /* DCOTransparentScroller.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		159FE8F31B1E8A9C00518435 /* TipTyper (App Store) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 159FE9171B1E8A9C00518435 /* Build configuration list for PBXNativeTarget "TipTyper (App Store)" */;
-			buildPhases = (
-				159FE8F41B1E8A9C00518435 /* Sources */,
-				159FE9071B1E8A9C00518435 /* Frameworks */,
-				159FE90A1B1E8A9C00518435 /* Resources */,
-				159FE9141B1E8A9C00518435 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TipTyper (App Store)";
-			productName = TipTyper;
-			productReference = 159FE91A1B1E8A9C00518435 /* TipTyper.app */;
-			productType = "com.apple.product-type.application";
-		};
 		15C21D3518A83D5500C9D410 /* TipTyper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15C21D6A18A83D5600C9D410 /* Build configuration list for PBXNativeTarget "TipTyper" */;
@@ -362,6 +327,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				47EB84632BE698C80016057E /* PBXTargetDependency */,
+				47EB845B2BE698240016057E /* PBXTargetDependency */,
 			);
 			name = TipTyper;
 			productName = TipTyper;
@@ -396,14 +363,6 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Bruno Philipe";
 				TargetAttributes = {
-					159FE8F31B1E8A9C00518435 = {
-						DevelopmentTeam = R85D3K8ATT;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
-					};
 					15C21D3518A83D5500C9D410 = {
 						DevelopmentTeam = R85D3K8ATT;
 					};
@@ -425,32 +384,42 @@
 			mainGroup = 15C21D2D18A83D5500C9D410;
 			productRefGroup = 15C21D3718A83D5500C9D410 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 47EB84552BE697F90016057E /* Products */;
+					ProjectRef = 47EB84542BE697F90016057E /* DCOAboutWindow.xcodeproj */;
+				},
+				{
+					ProductGroup = 47EB845D2BE6988C0016057E /* Products */;
+					ProjectRef = 47EB845C2BE6988C0016057E /* DCOTransparentScroller.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				15C21D3518A83D5500C9D410 /* TipTyper */,
-				159FE8F31B1E8A9C00518435 /* TipTyper (App Store) */,
 				15C21D5918A83D5500C9D410 /* TipTyperTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		159FE90A1B1E8A9C00518435 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				159FE90B1B1E8A9C00518435 /* InfoPlist.strings in Resources */,
-				159FE90C1B1E8A9C00518435 /* Localizable.strings in Resources */,
-				159FE90D1B1E8A9C00518435 /* Images.xcassets in Resources */,
-				159FE90E1B1E8A9C00518435 /* Preferences.xib in Resources */,
-				159FE90F1B1E8A9C00518435 /* BPDocument.xib in Resources */,
-				159FE9101B1E8A9C00518435 /* MainMenu.xib in Resources */,
-				159FE9111B1E8A9C00518435 /* Credits.rtf in Resources */,
-				159FE9121B1E8A9C00518435 /* DCOAboutWindow.xib in Resources */,
-				159FE9131B1E8A9C00518435 /* dsa_pub.pem in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXReferenceProxy section */
+		47EB84592BE697F90016057E /* DCOAboutWindow.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DCOAboutWindow.framework;
+			remoteRef = 47EB84582BE697F90016057E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		47EB84612BE6988C0016057E /* DCOTransparentScroller.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DCOTransparentScroller.framework;
+			remoteRef = 47EB84602BE6988C0016057E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
 		15C21D3418A83D5500C9D410 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,7 +431,6 @@
 				153911B218E496A9009FAB64 /* BPDocument.xib in Resources */,
 				157528601A2D6B2A00EB002C /* MainMenu.xib in Resources */,
 				153911B318E496A9009FAB64 /* Credits.rtf in Resources */,
-				15408A6818E3C90400127DA6 /* DCOAboutWindow.xib in Resources */,
 				1502C2FC18B97B70002EC738 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,47 +458,9 @@
 			shellPath = /bin/sh;
 			shellScript = "infoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n/bin/sh \"TipTyper/BumpBuild.sh\" $infoplist\nbuilddate=`date +%s`\nif [[ -n \"$builddate\" ]]; then\ndefaults write \"${infoplist%.plist}\" BuildDate \"${builddate}\"\nfi";
 		};
-		159FE9141B1E8A9C00518435 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "infoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n/bin/sh \"TipTyper/BumpBuild.sh\" $infoplist\nbuilddate=`date +%s`\nif [[ -n \"$builddate\" ]]; then\ndefaults write \"${infoplist%.plist}\" BuildDate \"${builddate}\"\nfi";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		159FE8F41B1E8A9C00518435 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				159FE8F51B1E8A9C00518435 /* BPLayoutManager.m in Sources */,
-				159FE8F61B1E8A9C00518435 /* BPBackgroundView.m in Sources */,
-				159FE8F71B1E8A9C00518435 /* NoodleLineNumberView.m in Sources */,
-				159FE8F81B1E8A9C00518435 /* BPTopBarView.m in Sources */,
-				159FE8F91B1E8A9C00518435 /* NoodleLineNumberMarker.m in Sources */,
-				159FE8FA1B1E8A9C00518435 /* NSColor+Luminance.m in Sources */,
-				159FE8FB1B1E8A9C00518435 /* NSString+WordsCount.m in Sources */,
-				159FE8FC1B1E8A9C00518435 /* BPTextView.m in Sources */,
-				159FE8FD1B1E8A9C00518435 /* DCOAboutWindowController.m in Sources */,
-				159FE8FE1B1E8A9C00518435 /* BPDocument.m in Sources */,
-				159FE8FF1B1E8A9C00518435 /* main.m in Sources */,
-				159FE9001B1E8A9C00518435 /* BPDocumentWindow.m in Sources */,
-				159FE9011B1E8A9C00518435 /* BPEncodingTool.m in Sources */,
-				159FE9021B1E8A9C00518435 /* BPPreferencesWindowController.m in Sources */,
-				159FE9031B1E8A9C00518435 /* DCOTransparentScroller.m in Sources */,
-				159FE9041B1E8A9C00518435 /* BPApplication.m in Sources */,
-				159FE9051B1E8A9C00518435 /* MarkerLineNumberView.m in Sources */,
-				159FE9061B1E8A9C00518435 /* DCOTransparentScrollView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		15C21D3218A83D5500C9D410 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,16 +473,13 @@
 				15D9EB051A2BA99E006EC677 /* NSColor+Luminance.m in Sources */,
 				15C21DD118A94A4E00C9D410 /* NSString+WordsCount.m in Sources */,
 				1502C30618B9AF5D002EC738 /* BPTextView.m in Sources */,
-				15408A6918E3C90400127DA6 /* DCOAboutWindowController.m in Sources */,
 				15C21D4D18A83D5500C9D410 /* BPDocument.m in Sources */,
 				15C21D4618A83D5500C9D410 /* main.m in Sources */,
 				15C21D7218A83D7C00C9D410 /* BPDocumentWindow.m in Sources */,
 				1500F28218B056B500481A86 /* BPEncodingTool.m in Sources */,
 				15962E831A0C6CB200E168EC /* BPPreferencesWindowController.m in Sources */,
-				15408A6F18E3CA8B00127DA6 /* DCOTransparentScroller.m in Sources */,
 				15753F5818AC78F5009E7E9E /* BPApplication.m in Sources */,
 				15C21DC618A8580B00C9D410 /* MarkerLineNumberView.m in Sources */,
-				15408A7018E3CA8B00127DA6 /* DCOTransparentScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,55 +499,19 @@
 			target = 15C21D3518A83D5500C9D410 /* TipTyper */;
 			targetProxy = 15C21D5E18A83D5600C9D410 /* PBXContainerItemProxy */;
 		};
+		47EB845B2BE698240016057E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCOAboutWindow;
+			targetProxy = 47EB845A2BE698240016057E /* PBXContainerItemProxy */;
+		};
+		47EB84632BE698C80016057E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCOTransparentScroller;
+			targetProxy = 47EB84622BE698C80016057E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		159FE9181B1E8A9C00518435 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TipTyper.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TipTyper/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TipTyper/TipTyper-Prefix.pch";
-				INFOPLIST_FILE = "TipTyper/TipTyper-AppStore-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.appstore.TipTyper;
-				PRODUCT_NAME = TipTyper;
-				PROVISIONING_PROFILE = "";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		159FE9191B1E8A9C00518435 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TipTyper.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TipTyper/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TipTyper/TipTyper-Prefix.pch";
-				INFOPLIST_FILE = "TipTyper/TipTyper-AppStore-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.appstore.TipTyper;
-				PRODUCT_NAME = TipTyper;
-				PROVISIONING_PROFILE = "";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		15C21D6818A83D5600C9D410 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -800,15 +691,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		159FE9171B1E8A9C00518435 /* Build configuration list for PBXNativeTarget "TipTyper (App Store)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				159FE9181B1E8A9C00518435 /* Debug */,
-				159FE9191B1E8A9C00518435 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		15C21D3118A83D5500C9D410 /* Build configuration list for PBXProject "TipTyper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

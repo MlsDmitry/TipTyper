@@ -20,9 +20,9 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #import <CommonCrypto/CommonCrypto.h>
+#import <DCOAboutWindow/DCOAboutWindowController.h>
 
 #import "BPApplication.h"
-#import "DCOAboutWindowController.h"
 #import "BPPreferencesWindowController.h"
 
 #ifdef SPARKLE
