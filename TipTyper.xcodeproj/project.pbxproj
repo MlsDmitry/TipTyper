@@ -22,9 +22,6 @@
 		15C21D4618A83D5500C9D410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D4518A83D5500C9D410 /* main.m */; };
 		15C21D4D18A83D5500C9D410 /* BPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D4C18A83D5500C9D410 /* BPDocument.m */; };
 		15C21D5518A83D5500C9D410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C21D5418A83D5500C9D410 /* Images.xcassets */; };
-		15C21D5C18A83D5500C9D410 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C21D5B18A83D5500C9D410 /* XCTest.framework */; };
-		15C21D5D18A83D5500C9D410 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C21D3918A83D5500C9D410 /* Cocoa.framework */; };
-		15C21D6718A83D5600C9D410 /* TipTyperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D6618A83D5600C9D410 /* TipTyperTests.m */; };
 		15C21D7218A83D7C00C9D410 /* BPDocumentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21D7118A83D7C00C9D410 /* BPDocumentWindow.m */; };
 		15C21DC618A8580B00C9D410 /* MarkerLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DC118A8580B00C9D410 /* MarkerLineNumberView.m */; };
 		15C21DC718A8580B00C9D410 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C21DC318A8580B00C9D410 /* NoodleLineNumberMarker.m */; };
@@ -37,13 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		15C21D5E18A83D5600C9D410 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15C21D2E18A83D5500C9D410 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15C21D3518A83D5500C9D410;
-			remoteInfo = TipTyper;
-		};
 		47EB84582BE697F90016057E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 47EB84542BE697F90016057E /* DCOAboutWindow.xcodeproj */;
@@ -106,7 +96,6 @@
 		15C21D4B18A83D5500C9D410 /* BPDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPDocument.h; sourceTree = "<group>"; };
 		15C21D4C18A83D5500C9D410 /* BPDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPDocument.m; sourceTree = "<group>"; };
 		15C21D5418A83D5500C9D410 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		15C21D5A18A83D5500C9D410 /* TipTyperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTyperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C21D5B18A83D5500C9D410 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		15C21D6218A83D5600C9D410 /* TipTyperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipTyperTests-Info.plist"; sourceTree = "<group>"; };
 		15C21D6618A83D5600C9D410 /* TipTyperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipTyperTests.m; sourceTree = "<group>"; };
@@ -142,15 +131,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15C21D5718A83D5500C9D410 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15C21D5D18A83D5500C9D410 /* Cocoa.framework in Frameworks */,
-				15C21D5C18A83D5500C9D410 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -169,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				15C21D3618A83D5500C9D410 /* TipTyper.app */,
-				15C21D5A18A83D5500C9D410 /* TipTyperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,24 +314,6 @@
 			productReference = 15C21D3618A83D5500C9D410 /* TipTyper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		15C21D5918A83D5500C9D410 /* TipTyperTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 15C21D6D18A83D5600C9D410 /* Build configuration list for PBXNativeTarget "TipTyperTests" */;
-			buildPhases = (
-				15C21D5618A83D5500C9D410 /* Sources */,
-				15C21D5718A83D5500C9D410 /* Frameworks */,
-				15C21D5818A83D5500C9D410 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				15C21D5F18A83D5600C9D410 /* PBXTargetDependency */,
-			);
-			name = TipTyperTests;
-			productName = TipTyperTests;
-			productReference = 15C21D5A18A83D5500C9D410 /* TipTyperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -365,9 +326,6 @@
 				TargetAttributes = {
 					15C21D3518A83D5500C9D410 = {
 						DevelopmentTeam = R85D3K8ATT;
-					};
-					15C21D5918A83D5500C9D410 = {
-						TestTargetID = 15C21D3518A83D5500C9D410;
 					};
 				};
 			};
@@ -397,7 +355,6 @@
 			projectRoot = "";
 			targets = (
 				15C21D3518A83D5500C9D410 /* TipTyper */,
-				15C21D5918A83D5500C9D410 /* TipTyperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -432,13 +389,6 @@
 				157528601A2D6B2A00EB002C /* MainMenu.xib in Resources */,
 				153911B318E496A9009FAB64 /* Credits.rtf in Resources */,
 				1502C2FC18B97B70002EC738 /* dsa_pub.pem in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15C21D5818A83D5500C9D410 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,22 +433,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15C21D5618A83D5500C9D410 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15C21D6718A83D5600C9D410 /* TipTyperTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		15C21D5F18A83D5600C9D410 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15C21D3518A83D5500C9D410 /* TipTyper */;
-			targetProxy = 15C21D5E18A83D5600C9D410 /* PBXContainerItemProxy */;
-		};
 		47EB845B2BE698240016057E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DCOAboutWindow;
@@ -646,48 +583,6 @@
 			};
 			name = Release;
 		};
-		15C21D6E18A83D5600C9D410 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TipTyper.app/Contents/MacOS/TipTyper";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TipTyper/TipTyper-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TipTyperTests/TipTyperTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunophilipe.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		15C21D6F18A83D5600C9D410 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TipTyper.app/Contents/MacOS/TipTyper";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TipTyper/TipTyper-Prefix.pch";
-				INFOPLIST_FILE = "TipTyperTests/TipTyperTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunophilipe.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -705,15 +600,6 @@
 			buildConfigurations = (
 				15C21D6B18A83D5600C9D410 /* Debug */,
 				15C21D6C18A83D5600C9D410 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		15C21D6D18A83D5600C9D410 /* Build configuration list for PBXNativeTarget "TipTyperTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15C21D6E18A83D5600C9D410 /* Debug */,
-				15C21D6F18A83D5600C9D410 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
