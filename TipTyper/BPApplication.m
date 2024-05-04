@@ -128,7 +128,7 @@ NSString *const kBPTipTyperWebsite = @"https://www.brunophilipe.com/software/tip
 		prefWindowController = [[BPPreferencesWindowController alloc] initWithWindowNibName:@"Preferences"];
 		prefWindow = prefWindowController.window;
 
-		[prefWindow setAnimationBehavior:NSWindowAnimationBehaviorDocumentWindow];
+//		[prefWindow setAnimationBehavior:NSWindowAnimationBehaviorDocumentWindow];
 	}
 
 	[prefWindowController performSelector:@selector(showWindow:) withObject:self afterDelay:0.2];
