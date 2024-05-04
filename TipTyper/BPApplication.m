@@ -98,7 +98,7 @@ NSString *const kBPTipTyperWebsite = @"https://www.brunophilipe.com/software/tip
 														  action:@selector(createNewTab:)
 												   keyEquivalent:@"t"];
 
-		[menuItem setKeyEquivalentModifierMask:NSEventModifierFlagCommand];
+		[menuItem setKeyEquivalentModifierMask:NSCommandKeyMask];
 
 		NSInteger index = [[self menuBarWindowMenu] indexOfItemWithTag:1337];
 
