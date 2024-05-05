@@ -388,7 +388,7 @@
 
 - (BOOL)usesRTL
 {
-	return [NSApp userInterfaceLayoutDirection] == NSUserInterfaceLayoutDirectionRightToLeft;
+	return [self userInterfaceLayoutDirection] == NSUserInterfaceLayoutDirectionRightToLeft;
 }
 
 - (void)drawHashMarksAndLabelsInRect:(NSRect)aRect
