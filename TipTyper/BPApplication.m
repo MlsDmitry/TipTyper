@@ -20,7 +20,7 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #import <CommonCrypto/CommonCrypto.h>
-#import <DCOAboutWindow/DCOAboutWindowController.h>
+//#import <DCOAboutWindow/DCOAboutWindowController.h>
 
 #import "BPApplication.h"
 #import "BPPreferencesWindowController.h"
@@ -55,7 +55,7 @@ NSString *const kBPTipTyperWebsite = @"https://www.brunophilipe.com/software/tip
 @implementation BPApplication
 {
 	BPPreferencesWindowController *prefWindowController;
-	DCOAboutWindowController *aboutWindowController;
+//	DCOAboutWindowController *aboutWindowController;
 
 	NSWindow *prefWindow;
 }
@@ -199,19 +199,20 @@ NSString *const kBPTipTyperWebsite = @"https://www.brunophilipe.com/software/tip
 #pragma mark - IBActions
 
 - (IBAction)showAboutPanel:(id)sender {
-	if (!aboutWindowController) {
-		aboutWindowController = [[DCOAboutWindowController alloc] init];
+//	if (!aboutWindowController) {
+//		aboutWindowController = [[DCOAboutWindowController alloc] init];
+//
+//        //TODO: Support for Lion
+//		NSTimeInterval buildDate = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"BuildDate"] doubleValue];
+//		NSInteger currentYear = [[NSCalendar currentCalendar] component:NSCalendarUnitYear
+//															   fromDate:[NSDate dateWithTimeIntervalSince1970:buildDate]];
+//		
+//		[aboutWindowController setAppCopyright:[NSString stringWithFormat:@"Copyright Bruno Philipe 2013-%ld – All Rights Reserved", currentYear]];
+//		[aboutWindowController setAppWebsiteURL:[NSURL URLWithString:kBPTipTyperWebsite]];
+//	}
 
-        //TODO: Support for Lion
-		NSTimeInterval buildDate = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"BuildDate"] doubleValue];
-		NSInteger currentYear = [[NSCalendar currentCalendar] component:NSCalendarUnitYear
-															   fromDate:[NSDate dateWithTimeIntervalSince1970:buildDate]];
-		
-		[aboutWindowController setAppCopyright:[NSString stringWithFormat:@"Copyright Bruno Philipe 2013-%ld – All Rights Reserved", currentYear]];
-		[aboutWindowController setAppWebsiteURL:[NSURL URLWithString:kBPTipTyperWebsite]];
-	}
-
-	[aboutWindowController showWindow:sender];
+//	[aboutWindowController showWindow:sender];
+    [self orderFrontStandardAboutPanel:sender];
 }
 
 @end
