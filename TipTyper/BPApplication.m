@@ -84,7 +84,7 @@ NSString *const kBPTipTyperWebsite = @"https://www.brunophilipe.com/software/tip
 	[[SUUpdater sharedUpdater] checkForUpdatesInBackground];
 #else
 #ifdef GNUSTEP
-    [self.checkForUpdateButton setEnabled:NO]
+    [self.checkForUpdateButton setEnabled:NO];
 #else
 	[self.checkForUpdateButton setHidden:YES];
 #endif
