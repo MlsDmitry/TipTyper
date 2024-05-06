@@ -22,10 +22,10 @@
 #import <Cocoa/Cocoa.h>
 #import "BPDocument.h"
 #import "BPBackgroundView.h"
-#import "BPTextView.h"
+//#import "BPTextView.h"
 
 @class BPDocument;
-@class BPTextView;
+//@class BPTextView;
 
 //@interface BPDocumentWindow : NSWindow <NSTextViewDelegate, NSTouchBarDelegate>
 @interface BPDocumentWindow : NSWindow <NSTextViewDelegate>
@@ -56,7 +56,8 @@
 
 @property (strong) IBOutlet BPBackgroundView	*wrapView;
 @property (strong) IBOutlet NSScrollView		*scrollView;
-@property (strong) IBOutlet BPTextView			*textView;
+//@property (strong) IBOutlet BPTextView			*textView;
+@property (strong) IBOutlet NSTextView            *textView;
 @property (strong) IBOutlet NSView				*infoView;
 @property (strong) IBOutlet NSSegmentedControl	*textAlignmentSegmentedControl;
 @property (strong) IBOutlet NSSegmentedControl	*editorSpacingSegmentedControl;

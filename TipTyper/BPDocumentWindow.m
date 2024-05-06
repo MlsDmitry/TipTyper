@@ -57,8 +57,8 @@
 
 	[self.textView setFont:[NSFont fontWithName:@"Monaco" size:12]];
 	[self.textView setDelegate:self];
-	[self.textView setAutomaticDashSubstitutionEnabled:NO];
-	[self.textView setAutomaticQuoteSubstitutionEnabled:NO];
+//	[self.textView setAutomaticDashSubstitutionEnabled:NO];
+//	[self.textView setAutomaticQuoteSubstitutionEnabled:NO];
 	[self.textView setDefaultParagraphStyle:paragraph];
 
 	NSLayoutManager *layoutManager = self.textView.layoutManager;
@@ -184,8 +184,8 @@
 	[self.textView setTypingAttributes:typingAttributes];
 
 	NSRange rangeOfChange = NSMakeRange(0, [[self.textView string] length]);
-	[self.textView shouldChangeTextInRange:rangeOfChange replacementString:nil];
-	[[self.textView textStorage] setAttributes:typingAttributes range:rangeOfChange];
+//	[self.textView shouldChangeTextInRange:rangeOfChange replacementString:nil];
+//	[[self.textView textStorage] setAttributes:typingAttributes range:rangeOfChange];
 	[self.textView didChangeText];
 }
 
@@ -267,12 +267,12 @@
 
 - (void)increaseIndentation:(id)sender
 {
-	[self.textView increaseIndentation];
+//	[self.textView increaseIndentation];
 }
 
 - (void)decreaseIndentation:(id)sender
 {
-	[self.textView decreaseIndentation];
+//	[self.textView decreaseIndentation];
 }
 
 - (void)loadTabSettingsFromDefaults
@@ -284,20 +284,20 @@
 	id aux;
 
 	if ((aux = [defaults objectForKey:kBPDefaultInsertTabs])) {
-		[self.textView setShouldInsertTabsOnLineBreak:[aux boolValue]];
+//		[self.textView setShouldInsertTabsOnLineBreak:[aux boolValue]];
 	} else {
-		[self.textView setShouldInsertTabsOnLineBreak:YES];
+//		[self.textView setShouldInsertTabsOnLineBreak:YES];
 	}
 
 	if ((aux = [defaults objectForKey:kBPDefaultInsertSpaces])) {
-		[self.textView setShouldInsertSpacesInsteadOfTabs:[aux boolValue]];
+//		[self.textView setShouldInsertSpacesInsteadOfTabs:[aux boolValue]];
 	}
 
 	if ((aux = [defaults objectForKey:kBPDefaultTabSize])) {
-		[self.textView setTabSize:[aux unsignedIntegerValue]];
+//		[self.textView setTabSize:[aux unsignedIntegerValue]];
 		[self setTabWidthToNumberOfSpaces:[aux unsignedIntegerValue]];
 	} else {
-		[self.textView setTabSize:4];
+//		[self.textView setTabSize:4];
 		[self setTabWidthToNumberOfSpaces:4];
 	}
 #ifdef DEBUG
@@ -414,11 +414,11 @@
 
 	switch (toggler.selectedSegment) {
 		case 0:
-			[self.textView decreaseIndentation];
+//			[self.textView decreaseIndentation];
 			break;
 
 		case 1:
-			[self.textView increaseIndentation];
+//			[self.textView increaseIndentation];
 			break;
 
 		default:

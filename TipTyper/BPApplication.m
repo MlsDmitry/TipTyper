@@ -83,7 +83,11 @@ NSString *const kBPTipTyperWebsite = @"https://www.brunophilipe.com/software/tip
 #ifdef SPARKLE
 	[[SUUpdater sharedUpdater] checkForUpdatesInBackground];
 #else
+#ifdef GNUSTEP
+    [self.checkForUpdateButton setEnabled:NO]
+#else
 	[self.checkForUpdateButton setHidden:YES];
+#endif
 #endif
 
 	[self setupNewTabMenuItem];
